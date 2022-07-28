@@ -128,8 +128,7 @@ a:focus {
   overflow: auto;
   transition: all 0.3s;
   background: #ffffff;
-  box-shadow: 0 10px 30px -12px rgb(0 0 0 / 42%),
-    0 4px 25px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(0 0 0 / 20%);
+  box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
 #sidebar::-webkit-scrollbar {
@@ -234,8 +233,9 @@ a:focus {
 #content {
   position: relative;
   transition: all 0.3s;
-  background-color: #d9d9d9;
+  background-color: #22213182;
 }
+
 
 .top-navbar {
   width: 100%;
@@ -248,9 +248,11 @@ a:focus {
   position: relative;
   width: 100%;
 }
-
+.main-content.effectBlur{
+  filter: blur(2px);
+}
 .navbar {
-  background-color: #1268fc;
+  background-color: #313acf;
   color: #ffffff;
 }
 
@@ -352,40 +354,28 @@ a:focus {
   display: inline-block;
   width: 100%;
   margin: 15px 0;
-  box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
-  border-radius: 10px;
+  border-radius: 2px;
   color: rgba(0, 0, 0, 0.87);
   background: #fff;
   overflow: hidden;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 }
-
-.card-stats .card-header {
-  float: left;
-  text-align: center;
-}
-
 .card .card-header {
-  padding: 15px 20px 0;
-  z-index: 3;
-  background-color: #fff !important;
-  border-bottom: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
 }
-
-.card .card-footer .stats .material-icons {
-  position: relative;
-  top: 4px;
-  font-size: 16px;
+.icon_card{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .card-stats .card-header span {
-  font-size: 36px;
-  line-height: 56px;
-  width: 56px;
-  height: 56px;
+  font-size: 40px;
 }
 
 .icon.icon-warning {
-  color: #ff9800;
+  color: rgb(110, 110, 110);
 }
 
 .icon.icon-rose {
@@ -398,10 +388,10 @@ a:focus {
   color: #00bcd4;
 }
 .card .card-footer {
-  margin: 0 7px 0px;
-  padding-top: 10px;
-  background-color: #fff;
-  border-top: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .text-info {
@@ -410,11 +400,9 @@ a:focus {
 
 .card-stats .card-content {
   text-align: right;
-  padding-top: 10px;
 }
 
 .card .card-content {
-  padding: 15px 20px;
   position: relative;
 }
 
@@ -432,18 +420,15 @@ a:focus {
   margin-bottom: 5px;
 }
 
-.card-stats .card-title {
-  margin: 0;
-}
 
 .card .card-footer .stats {
-  line-height: 22px;
   color: #555555;
   font-size: 15px;
 }
 
 .card .card-footer div {
   display: inline-block;
+  text-align: center;
 }
 
 .card .card-header-text h4 {
@@ -462,8 +447,8 @@ a:focus {
 }
 
 .card .card-content {
-  padding: 15px 20px;
-  position: relative;
+  padding: 10px;
+
 }
 
 .streamline .sl-primary {
@@ -626,7 +611,6 @@ a:focus {
     width: 260px;
     transform: translatex(-100%);
     transition: all 150ms linear;
-    box-shadow: none !important;
   }
 
   .body-overlay {
