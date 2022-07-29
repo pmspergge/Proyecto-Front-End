@@ -58,7 +58,7 @@ ol {
 a,
 a:hover,
 a:focus {
-  color: #333;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -71,7 +71,8 @@ a:focus {
   font-family: "Material Icons";
   font-style: normal;
   font-weight: 400;
-  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: url(https://example.com/MaterialIcons-Regular.eot);
+  /* For IE6-8 */
   src: local("Material Icons"), local("MaterialIcons-Regular"),
     url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
     url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
@@ -82,7 +83,8 @@ a:focus {
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px; /* Preferred icon size */
+  font-size: 24px;
+  /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -127,7 +129,7 @@ a:focus {
   width: 260px;
   overflow: auto;
   transition: all 0.3s;
-  background: #ffffff;
+  background: #343a40;
   box-shadow: 1px 0px 15px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -137,6 +139,7 @@ a:focus {
   background-color: #eee;
   display: none;
 }
+
 #sidebar::-webkit-scrollbar-thumbs {
   width: 5px;
   border-radius: 10px;
@@ -147,18 +150,19 @@ a:focus {
 #sidebar:hover::-webkit-scrollbar {
   display: block;
 }
+
 #sidebar:hover::-webkit-scrollbar-thumbs {
   display: block;
 }
 
 #sidebar .sidebar-header {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #343a40;
   border-bottom: 1px solid #eee;
 }
 
 .sidebar-header h3 {
-  color: #333;
+  color: #fff;
   font-size: 17px;
   margin: 0px;
   text-transform: uppercase;
@@ -175,14 +179,14 @@ a:focus {
   padding: 2px 7px;
 }
 
-#sidebar ul li.active > a {
-  color: #333;
-  background-color: rgba(200, 200, 200, 0.2);
+#sidebar ul li.active>a {
+  color: rgb(255, 255, 255);
+  background-color: rgba(138, 133, 133, 0.2);
 }
 
 #sidebar ul li a:hover {
-  color: #333;
-  background-color: rgba(200, 200, 200, 0.2);
+  color: rgb(255, 255, 255);
+  background-color: rgba(216, 212, 212, 0.2);
 }
 
 .dropdown-toggle::after {
@@ -218,7 +222,7 @@ a:focus {
   position: relative;
   margin-right: 10px;
   top: 5px;
-  color: #555555;
+  color: #ffffff;
   margin-left: 10px;
 }
 
@@ -248,11 +252,13 @@ a:focus {
   position: relative;
   width: 100%;
 }
-.main-content.effectBlur{
+
+.main-content.effectBlur {
   filter: blur(2px);
 }
+
 .navbar {
-  background-color: #313acf;
+  background-color: #49305f;
   color: #ffffff;
 }
 
@@ -264,6 +270,7 @@ a:focus {
   background-color: transparent;
   border: none;
 }
+
 .navbar button span {
   color: #fff;
 }
@@ -285,13 +292,13 @@ a:focus {
   padding: 0px;
 }
 
-.navbar-nav > li.active {
+.navbar-nav>li.active {
   color: #ffffff;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.08);
 }
 
-.navbar-nav > li > a {
+.navbar-nav>li>a {
   color: #ffffff;
 }
 
@@ -312,13 +319,13 @@ a:focus {
   line-height: 14px;
 }
 
-.navbar-nav > li.show .dropdown-menu {
+.navbar-nav>li.show .dropdown-menu {
   transform: translate3d(0, 0, 0);
   opacity: 1;
   visibility: visible;
 }
 
-.dropdown-menu li > a {
+.dropdown-menu li>a {
   font-size: 13px;
   padding: 10px 20px;
   margin: 0 5px;
@@ -327,7 +334,7 @@ a:focus {
   transition: all 150ms linear;
 }
 
-.navbar-nav > .active > a:focus {
+.navbar-nav>.active>a:focus {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.08);
 }
@@ -356,20 +363,23 @@ a:focus {
   margin: 15px 0;
   border-radius: 2px;
   color: rgba(0, 0, 0, 0.87);
-  background: #fff;
+  background: #343a40;
   overflow: hidden;
   box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.75);
 }
+
 .card .card-header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 10px;
 }
-.icon_card{
+
+.icon_card {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .card-stats .card-header span {
   font-size: 40px;
 }
@@ -381,12 +391,15 @@ a:focus {
 .icon.icon-rose {
   color: #e91e63;
 }
+
 .icon.icon-success {
   color: #4caf50;
 }
+
 .icon.icon-info {
   color: #00bcd4;
 }
+
 .card .card-footer {
   display: flex;
   justify-content: center;
@@ -409,13 +422,15 @@ a:focus {
 .card .card-content .category {
   margin-bottom: 0;
 }
+
 .card .category:not([class*="text-"]) {
-  color: #555555;
+  color: #d6d6d6;
   font-size: 14px;
   font-weight: 400;
 }
 
 .card .card-title:not(.card-calendar .card-title) {
+  color: white;
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -440,10 +455,14 @@ a:focus {
   text-decoration: none;
 }
 
-.table > thead > tr > th {
+.table>thead>tr>th {
   border-bottom-width: 1px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.text {
+  color: #ca8eff;
 }
 
 .card .card-content {
@@ -471,6 +490,7 @@ a:focus {
   height: 12px;
   border-radius: 100%;
 }
+
 .streamline .sl-primary:before,
 .streamline .sl-primary:last-child:after {
   background-color: #188ae2;
@@ -502,6 +522,7 @@ a:focus {
 .streamline .sl-danger {
   border-left-color: #ff5b5b;
 }
+
 .streamline .sl-item .sl-content {
   margin-left: 24px;
 }
@@ -627,6 +648,7 @@ a:focus {
     background-color: rgba(0, 0, 0, 0.5);
   }
 }
+
 /*===============small-screen overlay sidebar design media queries==============*/
 
 /* ---------------------------------------------------
